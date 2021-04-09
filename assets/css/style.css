@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0 0;
+}
+
+:root {
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-opensans: 'Open Sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+
+}
+
+body { 
+    background : linear-gradient(to right top, #ffcb3b, #ffb470, #ffaaaa, #ffb1da, #efbff5);
+    height: 100vh;
+}
+
+.card-holder {
+    text-align: center;
+    height: 50%;
+}
+
+.card-holder:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;  
+}
+
+.card {
+display: inline-block;
+vertical-align: middle;
+width: 500px;
+padding: 300px;
+padding-top: 30px;
+border: #a0a0a0 solid 1px;
+background: #f5f5f5;
+position: relative;
+top: 50%;
+border-radius: 15px;
+box-shadow: 14px 9px 17px -8px rgba(0,0,0,0.43);
+-webkit-box-shadow: 14px 9px 17px -8px rgba(0,0,0,0.43);
+-moz-box-shadow: 14px 9px 17px -8px rgba(0,0,0,0.43);
+}
+
+.title {
+    font-size: 65px;
+    font-family: var(--ff-opensans);
+    font-weight: 900;
+}
+
+.signup-form {
+    position: relative;
+    bottom: -120px;
+}
+
+input {
+    border: none;
+    background: #d3d3d3a1;
+    font-size: 30px;
+    font-family: var(--ff-roboto);
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 20px;
+    padding-right: 100px;
+}
+
+.btn {
+    left: -100%;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    cursor: pointer;
+    border: none !important;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    color: white;
+    opacity: 1;
+    padding: 15px 90px 15px 90px;
+    border-radius: 80px;
+    background: linear-gradient(to left bottom, #ffcb3b, #ffb470, #ffaaaa, #ffb1da, #efbff5);
+    width: 100%;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    margin-bottom: 30px;
+}
+
+/* input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+    border-bottom: 3px solid black;
+    color: black;
+    transition: 0.2s ease;
+}  */
+
+button {
+    border: none;
+    background: none;
+}
+
+footer {
+    background-color: hsla(185deg, 70%, 28%, 22%);
+    position: fixed;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    font-family: var(--ff-roboto);
+    padding: 15px;
+}
+.github {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.github:hover {
+    color: lightblue;
+}
+
